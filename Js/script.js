@@ -40,3 +40,25 @@ else if (tipoDeSuscripcion == 'Expert'){
 else if (tipoDeSuscripcion == 'ExpertPlus'){
     console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
 }
+
+//Ciclos
+
+let i = 1;
+let j = 10;
+
+while (i <= 5) {
+    console.log("El valor de i es: " + i);
+    i++;
+}
+while (j >= 2) {
+    console.log("El valor de j es: " + j);
+    j--;
+}
+
+// let resultado = parseInt(prompt("¿Cuánto es 2 + 2?: "));
+
+let respuesta = 0;
+do {
+  respuesta = prompt('¿Cual es el resultado de 2 + 2?')
+  respuesta *= 1;
+} while (respuesta != 4)
