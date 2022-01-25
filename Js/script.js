@@ -62,3 +62,30 @@ do {
   respuesta = prompt('¿Cual es el resultado de 2 + 2?')
   respuesta *= 1;
 } while (respuesta != 4)
+
+
+//Listas
+let lista = ['hola', 'como', 'estas'];
+const objetoCarro = {
+    marca: 'Bugatti',
+    modelo: 'Chiron',
+    precio: '1 USD'
+};
+
+function array(a) {
+    return console.log(a[0]);
+}
+
+array(lista);
+
+
+for (const value of lista) {
+    console.log(value);
+}
+
+for (const property in objetoCarro) {
+    if (Object.hasOwnProperty.call(objetoCarro, property)) {
+      const element = objetoCarro[property];
+      console.log(element);
+    }
+}
